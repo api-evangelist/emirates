@@ -1,0 +1,31 @@
+generated: '2026-09-22'
+method: probed
+source: pre-flight dossier (docs platform, portal detections) + CNAME chains and response headers of the hosts apis.yml names
+registry: all/0-working/vendors.yml
+areas_vocabulary:
+- documentation
+- developer-portal
+- api-gateway
+- cdn
+- hosting
+- sdk-generation
+- api-collections
+- status-page
+- support
+- community
+- identity
+- mcp-hosting
+vendors:
+- vendor: akamai
+  name: Akamai
+  area: cdn
+  host: emirates.com
+  evidence: header:server:akamaighost
+  signal: header
+  confidence: high
+  kin_score: []
+checked:
+- 'docs-platform: no-docs-host'
+- emirates.com (Website)
+- www.emirates.com (Documentation)
+- www.emirates.com (Support)

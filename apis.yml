@@ -1,23 +1,64 @@
 aid: emirates
+
 name: Emirates
-description: 'Emirates is a company surfaced via the API Evangelist harvest backlog (source: travel) and
-  added to the network as a stub for full-pipeline profiling.'
+
+description: 'Emirates is a global airline based in Dubai, United Arab Emirates, offering passenger and cargo services to destinations worldwide. The airline is known for its modern fleet, premium cabin experience, and extensive network connecting six continents. It provides digital services such as flight booking, check‑in, flight status, and loyalty program management through its website and mobile apps.'
+
 url: https://raw.githubusercontent.com/api-evangelist/emirates/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:travel
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-22'
+
 modified: '2026-09-22'
+
 tags:
 - Company
-apis: []
+- Airline
+- Travel
+- Aviation
+- Dubai
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Security
+  url: https://www.emirates.com/ae/english/information/cybersecurity/
+- type: Vendors
+  url: vendors/emirates-vendors.yml
+- type: VulnerabilityDisclosure
+  url: security/emirates-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/emirates-domain-security.yml
 - type: Website
   url: https://emirates.com/
+
+- type: Documentation
+  url: https://www.emirates.com/english/
+- type: PrivacyPolicy
+  url: https://www.emirates.com/english/information/privacy-policy/
+- type: TermsOfService
+  url: https://www.emirates.com/english/information/terms-and-conditions/
+- type: Support
+  url: https://www.emirates.com/english/help/
+- type: Blog
+  url: https://www.emirates.com/english/blog/
+
+apis: []
+x-enrichment:
+  date: '2026-09-22'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
